@@ -1,0 +1,15 @@
+import random
+
+# 定义名字的前缀和后缀
+first_names = ["小明", "小红", "小刚", "小丽", "小华"]
+last_names = ["张", "李", "王", "赵", "刘"]
+
+# 随机生成名字
+def generate_name():
+    first_name = random.choice(first_names)
+    last_name = random.choice(last_names)
+    return last_name + first_name
+
+# 生成10个随机名字
+for _ in range(10):
+    print(generate_name())
